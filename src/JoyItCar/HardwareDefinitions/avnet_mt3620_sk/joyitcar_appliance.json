@@ -1,0 +1,99 @@
+{
+    "Metadata": {
+        "Type": "Azure Sphere Hardware Definition",
+        "Version": 1
+    },
+    "Description": {
+        "Name": "Template hardware abstraction for Avnet MT3620 SK",
+        "MainCoreHeaderFileTopContent": [
+            "/* Copyright (c) Microsoft Corporation. All rights reserved.",
+            "   Licensed under the MIT License. */",
+            "",
+            "// This file defines the mapping from the Avnet MT3620 Starter Kit (SK) to the",
+            "// 'template appliance' abstraction used by the templates.",
+            "// Some peripherals are on-board on the Avnet MT3620 SK, while other peripherals must be",
+            "// attached externally if needed.",
+            "// See https://aka.ms/AzureSphereHardwareDefinitions for more information on how to use",
+            "// hardware abstractions to enable apps to work across multiple hardware variants."
+        ]
+    },
+    "Imports": [
+        {
+            "Path": "avnet_mt3620_sk.json"
+        }
+    ],
+    "Peripherals": [
+        {
+            "Name": "I2C_MOTOR_DRIVER",
+            "Type": "I2cMaster",
+            "Mapping": "AVNET_MT3620_SK_ISU2_I2C",
+            "Comment": "MT3620 SK: I2C on Grove Connector."
+        },
+        {
+            "Name": "USER_BUTTON_A",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_USER_BUTTON_A",
+            "Comment": "MT3620 SK: User Button A."
+        },
+        {
+            "Name": "USER_BUTTON_B",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_USER_BUTTON_B",
+            "Comment": "MT3620 SK: User Button B."
+        },
+        {
+            "Name": "RGBLED_RED",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_USER_LED_RED",
+            "Comment": "MT3620 SK: User LED RED Channel."
+        },
+        {
+            "Name": "RGBLED_GREEN",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_USER_LED_GREEN",
+            "Comment": "MT3620 SK: User LED GREEN Channel."
+        },
+        {
+            "Name": "RGBLED_BLUE",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_USER_LED_BLUE",
+            "Comment": "MT3620 SK: User LED BLUE Channel."
+        },
+        {
+            "Name": "BLE4_UART_RXTX",
+            "Type": "Uart",
+            "Mapping": "AVNET_MT3620_SK_ISU0_UART",
+            "Comment": "MT3620 SK: MikroBUS 1 UART Connector."
+        },
+        {
+            "Name": "BLE4_UART_RST",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_GPIO16",
+            "Comment": "MT3620 SK:  MikroBUS 1 UART RST Channel."
+        },
+        {
+            "Name": "BLE4_UART_CTS",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_GPIO34",
+            "Comment": "MT3620 SK: MikroBUS 1 UART CS Channel."
+        },
+        {
+            "Name": "BLE4_UART_DSR",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_GPIO0",
+            "Comment": "MT3620 SK: MikroBUS 1 UART PWM Channel."
+        },
+        {
+            "Name": "BLE4_UART_DTR",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_GPIO42",
+            "Comment": "MT3620 SK: MikroBUS 1 UART AN Channel."
+        },
+        {
+            "Name": "BLE4_UART_RTS",
+            "Type": "Gpio",
+            "Mapping": "AVNET_MT3620_SK_GPIO2",
+            "Comment": "MT3620 SK: MikroBUS 1 UART INT Channel."
+        }
+    ]
+}

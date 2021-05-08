@@ -1,0 +1,30 @@
+{
+  "SchemaVersion": 1,
+  "Name": "JoyItCar",
+  "ComponentId": "930570db-f85e-486e-956a-e7737e4e79f4",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [],
+  "Capabilities": {
+    "AllowedConnections": [ 
+      "global.azure-devices-provisioning.net",
+      "cgigeiotplatformdemohub.azure-devices.net"
+    ],
+    "DeviceAuthentication": "658752a0-700e-4866-9831-0860945cb619",
+    "AllowedApplicationConnections": [],
+    "I2cMaster": [ "$I2C_MOTOR_DRIVER" ],
+    "Uart": [ "$BLE4_UART_RXTX" ],
+    "Gpio": [ 
+      "$USER_BUTTON_A",
+      "$USER_BUTTON_B",
+      "$RGBLED_RED",
+      "$RGBLED_BLUE",
+      "$RGBLED_GREEN",
+      "$BLE4_UART_RST",
+      "$BLE4_UART_CTS",
+      "$BLE4_UART_DSR",
+      "$BLE4_UART_DTR",
+      "$BLE4_UART_RTS"
+    ]
+  },
+  "ApplicationType": "Default"
+}
