@@ -11,4 +11,4 @@ Le code source contient les éléments suivants :
 
 # Détails de l'implémentation
 
-Vous pourrez retrouver plus de détails sur comment ce projet a été réalisé sur mon blog : [https://kbeaugrandblog.wordpress.com/2021/05/08/tutoriel-de-la-voiture-connectee-azure-sphere](https://wordpress.com/post/kbeaugrandblog.wordpress.com/622)
+Vous pourrez retrouver plus de détails sur comment ce projet a été réalisé sur mon blog : [https://kbeaugrandblog.wordpress.com/2021/05/08/tutoriel-de-la-voiture-connectee-azure-sphere](https://kbeaugrandblog.wordpress.com/2021/05/08/tutoriel-de-la-voiture-connectee-azure-sphere-partie-1/)
