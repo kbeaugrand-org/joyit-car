@@ -12,3 +12,17 @@ Le code source contient les éléments suivants :
 # Détails de l'implémentation
 
 Vous pourrez retrouver plus de détails sur comment ce projet a été réalisé sur mon blog : [https://kbeaugrandblog.wordpress.com/2021/05/08/tutoriel-de-la-voiture-connectee-azure-sphere](https://kbeaugrandblog.wordpress.com/2021/05/08/tutoriel-de-la-voiture-connectee-azure-sphere-partie-1/)
+
+# Prérequis
+
+Pour pouvoir utiliser ce code source vous aurez besoins : 
+- VS Code 
+- Extensions pour VSCode : 
+  - Azure Account
+  - Azure Functions
+  - Azure IoT Tools
+  - Azure Sphere
+  - C/C++
+  - CMake et CMake Tools
+  
+   
